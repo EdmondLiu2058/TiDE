@@ -2,7 +2,7 @@
 
 ################# Part-1 Slurm directives ####################
 ## Working dir
-#SBATCH -D /users/username
+#SBATCH -D /users/jl2058/TiDE
 ## Environment variables
 #SBATCH --export=ALL
 ## Output and Error Files
