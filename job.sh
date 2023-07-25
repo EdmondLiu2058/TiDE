@@ -13,7 +13,7 @@
 ## Run time: "hours:minutes:seconds", "days-hours"
 #SBATCH --time=24:05:00
 ## Memory limit (in megabytes). Total --mem or amount per cpu --mem-per-cpu
-#SBATCH --mem-per-cpu=1024
+#SBATCH --mem-per-cpu=10240
 ## GPU requirements
 #SBATCH --gres gpu:2
 ## Specify partition
