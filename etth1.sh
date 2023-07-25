@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #!/bin/bash
-for horizon in 720 
+for horizon in 96 
   do
     python3 -m train \
     --transform=true \
