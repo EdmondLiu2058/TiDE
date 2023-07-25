@@ -137,9 +137,8 @@ def training():
   # print(gpus)
   print("gpus:", gpus)
   print("FLAGS.gpu:", FLAGS.gpu)
-  tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
+  # tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
   
-  # tf.config.experimental.set_visible_devices([], 'GPU')
   if gpus:
     try:
       for gpu in gpus:
