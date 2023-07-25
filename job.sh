@@ -15,7 +15,7 @@
 ## Memory limit (in megabytes). Total --mem or amount per cpu --mem-per-cpu
 #SBATCH --mem-per-cpu=102400
 ## GPU requirements
-#SBATCH --gres gpu:2
+#SBATCH --gres gpu:1
 ## Specify partition
 #SBATCH -p gpu
 
@@ -76,6 +76,7 @@ for horizon in 96
     --final_decoder_hidden=16 \
     --num_split=1 \
     --learning_rate=0.000984894211777642 \
+    --gpu=0\
     --min_num_epochs=10 > $RESULTS_DIR/etth1_${horizon}.log
   done
 
