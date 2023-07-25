@@ -30,6 +30,7 @@ source "${flight_ROOT:-/opt/flight}"/etc/setup.sh
 #------------------------------
 # e.g.:
 # Load the OpenMPI module for access to `mpirun` command
+flight env activate conda
 # flight env activate gridware
 # module load mpi/openmpi
 
@@ -78,4 +79,5 @@ for horizon in 96
     --min_num_epochs=10 > $RESULTS_DIR/etth1_${horizon}.log
   done
 
+echo "finished"
   
