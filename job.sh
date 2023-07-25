@@ -11,11 +11,11 @@
 ## Job name
 #SBATCH -J gpu-test
 ## Run time: "hours:minutes:seconds", "days-hours"
-#SBATCH --time=24:05:00
+#SBATCH --time=00:05:00
 ## Memory limit (in megabytes). Total --mem or amount per cpu --mem-per-cpu
-#SBATCH --mem-per-cpu=10240
+#SBATCH --mem-per-cpu=102400
 ## GPU requirements
-#SBATCH --gres gpu:2
+#SBATCH --gres gpu:1
 ## Specify partition
 #SBATCH -p gpu
 
@@ -60,7 +60,7 @@ echo "I was allocated the following GPU devices: $CUDA_VISIBLE_DEVICES" >> $RESU
 echo "Output file has been generated, please check $RESULTS_DIR/test.output"
 for horizon in 96 
   do
-    python3 -m train \
+    python3 -m -u train \
     --transform=true \
     --layer_norm=true \
     --holiday=true \
