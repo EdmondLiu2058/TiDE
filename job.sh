@@ -76,7 +76,6 @@ for horizon in 96
     --final_decoder_hidden=16 \
     --num_split=1 \
     --learning_rate=0.000984894211777642 \
-
     --min_num_epochs=10 > $RESULTS_DIR/etth1_${horizon}.log
   done
 
