@@ -133,8 +133,10 @@ def training():
   np.random.seed(FLAGS.random_seed)
 
   gpus = tf.config.experimental.list_physical_devices('GPU')
+  print('-----00-----')
+  print(gpus)
   tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
-  # print(gpus)
+  
   # tf.config.experimental.set_visible_devices([], 'GPU')
   if gpus:
     try:
