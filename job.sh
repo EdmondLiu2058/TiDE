@@ -60,7 +60,7 @@ echo "I was allocated the following GPU devices: $CUDA_VISIBLE_DEVICES" >> $RESU
 echo "Output file has been generated, please check $RESULTS_DIR/test.output"
 for horizon in 96 
   do
-    python3 -m -u train \
+    python3 -u train \
     --transform=true \
     --layer_norm=true \
     --holiday=true \
