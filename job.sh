@@ -11,11 +11,11 @@
 ## Job name
 #SBATCH -J gpu-test
 ## Run time: "hours:minutes:seconds", "days-hours"
-#SBATCH --time=00:05:00
+#SBATCH --time=24:05:00
 ## Memory limit (in megabytes). Total --mem or amount per cpu --mem-per-cpu
 #SBATCH --mem-per-cpu=102400
 ## GPU requirements
-#SBATCH --gres gpu:1
+#SBATCH --gres gpu:2
 ## Specify partition
 #SBATCH -p gpu
 
