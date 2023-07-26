@@ -281,7 +281,7 @@ def training():
     summary.write(step=step.numpy())
   
 
-  tf.saved_model.save(model, "savedTiDE.pb")
+  # tf.saved_model.save(model, "savedTiDE.pb")
 
 
 class Summary:
