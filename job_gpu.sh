@@ -32,9 +32,9 @@ source "${flight_ROOT:-/opt/flight}"/etc/setup.sh
 # Load the OpenMPI module for access to `mpirun` command
 # flight env activate conda@jl2058
 
-conda activate TiDE
-# flight env activate gridware
-# module load mpi/openmpi
+# conda activate TiDE
+flight env activate gridware
+module load mpi/openmpi
 
 if ! command -v mpirun &>/dev/null; then
     echo "No mpirun command found, ensure that a version of MPI is installed and available in PATH" >&2
