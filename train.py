@@ -137,7 +137,7 @@ def training():
   print('-----00-----')
   print("gpus:", gpus)
   print("FLAGS.gpu:", FLAGS.gpu)
-  tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
+  # tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
   
   if gpus:
     try:
@@ -279,6 +279,9 @@ def training():
         logging.info('Early stopping')
         break
     summary.write(step=step.numpy())
+  
+
+  tf.saved_model.save(model, "savedTiDE.pb")
 
 
 class Summary:
