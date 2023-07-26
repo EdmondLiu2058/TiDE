@@ -30,7 +30,8 @@ source "${flight_ROOT:-/opt/flight}"/etc/setup.sh
 #------------------------------
 # e.g.:
 # Load the OpenMPI module for access to `mpirun` command
-flight env activate conda@jl2058
+# flight env activate conda@jl2058
+
 conda activate TiDE
 # flight env activate gridware
 # module load mpi/openmpi
