@@ -4,7 +4,7 @@
 ## Working dir
 #SBATCH -D /users/jl2058/TiDE
 ## Environment variables
-#SBATCH --export=ALL
+#SBATCH --export CUDA_VISIBLE_DEVICES=0
 ## Output and Error Files
 #SBATCH -o job-%j.output
 #SBATCH -e job-%j.error
