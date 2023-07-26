@@ -281,6 +281,10 @@ def training():
     summary.write(step=step.numpy())
   
 
+  # Save the model at the end of training
+  model_save_path = "savedTiDE"
+  tf.saved_model.save(model, model_save_path)
+  logging.info('Model saved to %s', model_save_path)
   # tf.saved_model.save(model, "savedTiDE.pb")
 
 
