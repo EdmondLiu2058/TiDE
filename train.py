@@ -137,7 +137,7 @@ def training():
   # print('-----00-----')
   # print("gpus:", gpus)
   # print("FLAGS.gpu:", FLAGS.gpu)
-  # tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
+  tf.config.experimental.set_visible_devices(gpus[FLAGS.gpu], 'GPU')
   
   if gpus:
     try:
