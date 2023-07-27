@@ -33,13 +33,13 @@ source "${flight_ROOT:-/opt/flight}"/etc/setup.sh
 # flight env activate conda@jl2058
 
 # conda activate TiDE
-flight env activate gridware
-module load mpi/openmpi
+# flight env activate gridware
+# module load mpi/openmpi
 
-if ! command -v mpirun &>/dev/null; then
-    echo "No mpirun command found, ensure that a version of MPI is installed and available in PATH" >&2
-    exit 1
-fi
+# if ! command -v mpirun &>/dev/null; then
+#     echo "No mpirun command found, ensure that a version of MPI is installed and available in PATH" >&2
+#     exit 1
+# fi
 
 #===========================
 #  Create results directory
